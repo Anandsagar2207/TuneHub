@@ -1,0 +1,114 @@
+body {
+	background-color: black;
+}
+
+.large-button {
+	font-size: 7px; /* Set font size */
+	padding: 10px 20px; /* Set padding to increase clickable area */
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.box {
+	width: 300px; /* Set the width of the box */
+	height: 570px; /* Set the height of the box */
+	background-color: white; /* Set the background color of the box */
+	border: 1px solid #000; /* Add a border around the box */
+	padding: 20px; /* Add padding inside the box */
+	box-sizing: border-box;
+	/* Include padding and border in the box's total width and height */
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.container {
+	display: flex;
+	background-color: black;
+	justify-content: center; /* Horizontally centers the box */
+	align-items: center; /* Vertically centers the box */
+	height: 100vh;
+	/* Example height for the container (adjust as needed) */
+}
+
+box label {
+	text-align: left;
+	margin-left: 20px;
+}
+.email input[type="text"] {
+	padding: 5px;
+	position: relative;
+	border-radius: 2px;
+	border: 1px solid #ECF0EF;
+	height: 35px;
+	width:200px;
+	-webkit-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+}
+.email input::after {
+	content: '<i class="fa fa-envelope icon"> ';
+}
+.email i {
+	position: absolute;
+	transform: translateY(-180%);
+	z-index: 9999;
+	height: 10px;
+	line-height: 2;
+}
+.username input[type="text"] {
+	padding: 5px;
+	position: relative;
+	border-radius: 2px;
+	border: 1px solid #ECF0EF;
+	height: 35px;
+	width:200px;
+	-webkit-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+}
+.username input::after {
+	content: '<i class="fa fa-envelope icon"> ';
+}
+.username i {
+	position: absolute;
+	transform: translateY(-180%);
+	z-index: 9999;
+	height: 10px;
+	line-height: 2;
+}
+
+.password input[type="password"] {
+	padding: 5px;
+	position: relative;
+	border-radius: 2px;
+	border: 1px solid #ECF0EF;
+	height: 35px;
+	width:200px;
+	-webkit-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+}
+.password input::after {
+	content: '<i class="fa fa-envelope icon"> ';
+}
+.password i {
+	position: absolute;
+	transform: translateY(-180%);
+	z-index: 9999;
+	height: 10px;
+	line-height: 2;
+}
+
+
+.button {
+	display: flex;
+	margin-left:80px;
+	background-color:#46a2b9;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.button:hover{
+	background-color: grey;
+}

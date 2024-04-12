@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>REGISTER PAGE</title>
+<link rel=stylesheet type=text/css th:href="@{/registration.css}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h2>Register Form</h2>
+			<form action="register" method="post">
+				<div class="username">
+				<label>Username :</label><br><br>
+				<i class="fas fa-envelope"></i>
+				<input  class="input" type="text" name="username" placeholder=" Username">
+				</div>
+				<div class="email">
+				<label>Email :</label><br><br>
+				<i class="fas fa-envelope"></i>
+				<input  class="input" type="text" name="email" placeholder=" Email">
+				</div>
+				<div class="password">
+				<label>Password :</label><br><br>
+				<i class="fas fa-lock"></i>
+				<input class="input" type="password" name="password" placeholder=" Password">
+				</div> <br>
+				<label>Gender:</label><br> Male<input type="radio"
+					name="gender" value="male">
+				<!-- 		<label for="Male">M</label> -->
+				Female<input type="radio" name="gender" value="female">
+				<!-- 		<label for="Female">F</label> -->
+				Other<input type="radio" name="gender" value="others">
+				<!-- 		<label for="Others">O</label> -->
+				<br> <br> <label>Role:</label><br> Admin<input
+					type="radio" name="role" value="admin">
+				<!-- 		<label for="Administration">Admin</label> -->
+				Customer<input type="radio" name="role" value="customer">
+				<!-- 		<label for="Customers">Customer</label> -->
+				<br> <br> <label>Address:</label><br>
+				<textarea name="address" placeholder="Address"></textarea>
+				<br> <br> <input class="button" type="submit"
+					value="Register">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
